@@ -4,6 +4,8 @@
   "description": "safe space ver_3",
   "main": "server.js",
   "scripts": {
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
     "back": "cd Server && nodemon server",
     "front": "cd client && npm start",
     "start": "concurrently \"npm run front\" \"npm run back\""
