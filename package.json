@@ -6,7 +6,7 @@
   "scripts": {
     "back": "cd Server && nodemon server",
     "front": "cd client && npm start",
-    "dev": "concurrently \"npm run front\" \"npm run back\""
+    "start": "concurrently \"npm run front\" \"npm run back\""
   },
   "author": "Donia BR",
   "license": "ISC",
