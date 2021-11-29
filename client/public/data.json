@@ -1,0 +1,497 @@
+[
+    {
+      "id":"0",
+      "Title": "Your Name",
+      "PicURL":"https://images.alphacoders.com/736/thumb-1920-736461.png",
+      "Descrip":"Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.",
+      "Score": "8.92",
+      "Genres": "Romance, Supernatural, School, Drama", 
+      "Trailer":"https://youtu.be/3KR8_igDs1Y"
+    },
+    {
+      "id":"1",
+      "Title": "the Garden of sinners",
+      "PicURL":"https://wallpapercave.com/wp/wp4091728.jpg",
+      "Descrip":"In November 1998, a double homicide occurs at the newly constructed Ogawa apartment complex in the heart of Mifune City. The murderer, Tomoe Enjou, has fled in a panic. To his astonishment, he is not pursued by the police and news of the incident has not been reported through media outlets. After Shiki Ryougi defends Tomoe from a group of thugs, she allows him to use her residence as a hideout. However, a few days later, Tomoe is shaken to discover that his mother is alive, even though he is convinced that he killed her.",
+      "Score": "8.55",
+      "Genres":" Action, Mystery, Supernatural, Drama, Romance, Thriller",
+      "Trailer": "https://www.youtube.com/watch?v=4i3SuIYVBB4&ab_channel=AniplexUSA"
+  
+    },
+    {
+      "id":"2",
+      "Title": "Howl's Moving Castle",
+      "PicURL":"https://images7.alphacoders.com/325/thumb-1920-325547.jpg",
+      "Descrip":"That jumbled piece of architecture, that cacophony of hissing steam and creaking joints, with smoke billowing from it as it moves on its own... That castle is home to the magnificent wizard Howl, infamous for both his magical prowess and for being a womanizer—or so the rumor goes in Sophie Hatter's small town. Sophie, as the plain daughter of a hatmaker, does not expect much from her future and is content with working hard in the shop.",
+      "Score": "8.66",
+      "Genres":" Adventure, Drama, Fantasy, Romance",
+      "Trailer":"https://youtu.be/iwROgK94zcM"
+  
+    },
+    {
+      "id":"3",
+      "Title": "Psycho-Pass: The Movie",
+      "PicURL":"https://fanart.tv/fanart/movies/296917/moviebackground/psycho-pass-movie-585db57ee1031.jpg",
+      "Descrip":"Due to the incredible success of the Sibyl System, Japan has begun exporting the technology to other countries with the hope that it will one day be used all around the world. In order to test its effectiveness in a foreign location, the war-torn state of the South East Asian Union (SEAUn) decides to implement the system, hoping to bring peace and stability to the town of Shambala Float and keep the population in check. However, a group of anti-Sibyl terrorists arrive in Japan, and the Ministry of Welfare's Public Safety Bureau discovers significant evidence that the invaders are being aided by Shinya Kougami, a former Enforcer who went rogue. Because of their past relationship, Akane Tsunemori is sent to SEAUn to bring him back, but with their last meeting years in the past, their reunion might not go quite as planned.",
+      "Score": "7.73",
+      "Genres":"Action, Military, Police, Sci-Fi",
+      "Trailer":"https://youtu.be/MFI9ygRHwuI"
+      
+    },
+    {
+      "id":"4",
+      "Title": "Ajin",
+      "PicURL":"https://images.alphacoders.com/757/thumb-1920-757661.jpg",
+      "Descrip":"For high schooler Kei—and for at least forty-six others—immortality comes as the nastiest surprise ever.Sadly for Kei, such a feat doesn't make him a superhero. In the eyes of both the general public and governments, he's a rare specimen who needs to be hunted down and handed over to scientists to be experimented on for life—a demi-human who must die a thousand deaths for the benefit of humanity.",
+      "Score": "7.26",
+      "Genres":"Action, Horror, Mystery, Seinen, Supernatural",
+      "Trailer":"https://youtu.be/u7SvxHuHmi8"
+  
+    },
+    {
+      "id":"5",
+      "Title": "Kiki's Delivery Service",
+      "PicURL":"https://images3.alphacoders.com/245/thumb-1920-245067.jpg",
+      "Descrip":"Kiki, a 13-year-old witch-in-training, must spend a year living on her own in a distant town in order to become a full-fledged witch. Leaving her family and friends, Kiki undertakes this tradition when she flies out into the open world atop her broomstick with her black cat Jiji.",
+      "Score": "8.22",
+      "Genres":"Adventure, Comedy, Drama, Magic, Romance, Fantasy",
+      "Trailer":"https://youtu.be/4bG17OYs-GA"
+  
+    },
+    {
+      "id":"6",
+      "Title": "Grave of the Fireflies",
+      "PicURL":"https://images6.alphacoders.com/500/thumb-1920-500371.png",
+      "Descrip":"As World War II reaches its conclusion in 1945, Japan faces widespread destruction in the form of American bombings, devastating city after city. Hotaru no Haka, also known as Grave of the Fireflies, is the story of Seita and his sister Setsuko, two Japanese children whose lives are ravaged by the brutal war. They have lost their mother, their father, their home, and the prospect of a bright future—all tragic consequences of the war.",
+      "Score": "8.51",
+      "Genres":"Drama, Historical",
+      "Trailer":"https://youtu.be/4vPeTSRd580"
+  
+    },
+    {
+      "id":"7",
+      "Title": "xxxHOLiC Movie: A Midsummer Night's Dream",
+      "PicURL":"https://images4.alphacoders.com/161/thumb-1920-161478.jpg",
+      "Descrip":"Summer break has arrived, but while his other classmates are out having fun, Kimihiro Watanuki continues to work as compensation for the eccentric Yuuko in her shop. With the spirits and supernatural phenomena that bother him lessening, he pays his dues by cleaning, cooking, and doing whatever else the apparently lazy Yuuko needs.",
+      "Score": "7.96",
+      "Genres":"Mystery, Comedy, Psychological, Supernatural, Drama",
+      "Trailer":"https://www.youtube.com/watch?v=PKj4bSMRqH8&ab_channel=XxxHolic"
+  
+    },
+    {
+      "id":"8",
+      "Title": "Steins;Gate Movie",
+      "PicURL":"https://images.alphacoders.com/224/thumb-1920-224763.jpg",
+      "Descrip":"After a year in America, Kurisu Makise returns to Akihabara and reunites with Rintarou Okabe. However, their reunion is cut short when Okabe begins to experience recurring flashes of other timelines as the consequences of his time traveling start to manifest. These side effects eventually culminate in Okabe suddenly vanishing from the world, and only the startled Kurisu has any memory of his existence",
+      "Score": "8.48",
+      "Genres":"Sci-Fi, Drama",
+      "Trailer":"https://youtu.be/rDsCNz3pWUg"
+  
+    },
+    {
+      "id":"9",
+      "Title": "Tokyo Godfathers",
+      "PicURL":"http://static.minitokyo.net/downloads/40/27/731390.jpg",
+      "Descrip":"One Christmas Eve, Hana, Gin, and Miyuki are rummaging for presents through heaps of garbage when they chance upon an abandoned baby in the cold winter night. Appalled at the pitiful sight, Hana's maternal instincts kick in and she insists on finding the baby's biological mother to demand an explanation. Naming the baby Kiyoko—meaning pure child—they begin their search using the possible clues left alongside her: a mysterious key and a single note. However, their plans are soon thrown into disarray as they get caught up in a series of unprecedented events.",
+      "Score": "8.29",
+      "Genres":"Comedy, Drama",
+      "Trailer":""
+  
+    },
+    {
+      "id":"10",
+      "Title": "From Up on Poppy Hill",
+      "PicURL":"https://images7.alphacoders.com/520/thumb-1920-520192.jpg",
+      "Descrip":"top a hill overlooking a seaside port sits a boarding house named Coquelicot Manor. Since the building is run by her family, Umi Matsuzaki carries out many of the duties involved in managing the small establishment, such as preparing meals for her fellow boarders. When she isn't at home, she is a student at the local high school—one that is currently dealing with a small crisis.",
+      "Score": "7.82",
+      "Genres":"Historical, Romance, School, Shoujo",
+      "Trailer":""
+  
+    },
+    {
+      "id":"11",
+      "Title": "Paprika",
+      "PicURL":"https://images4.alphacoders.com/709/thumb-1920-70948.jpg",
+      "Descrip":"The world of dreams can be an incredible window into the psyche, showing one's deepest desires, aspirations, and repressed memories. One hopeful tech lab has been developing the DC Mini, a device with the power to delve into the dreams of others. Atsuko Chiba and Kosaku Tokita have been tirelessly working to develop this technology with the hopes of using it to deeply explore patients' minds and help cure them of their psychological disorders.However, having access to the deepest corners of a person's mind comes with a tremendous responsibility. In the wrong hands, the DC Mini could be used as a form of psychological terrorism and cause mental breakdowns in the minds of targets. When this technology is stolen and people around them start acting strangely, Atsuko and Kosaku know they have a serious problem on their hands. Enlisting the help of Officer Konakawa, who has been receiving this experimental therapy, they search both the real and dream worlds for their mental terrorist.",
+      "Score": "8.06",
+      "Genres":"Dementia, Fantasy, Horror, Mystery, Psychological, Sci-Fi, Thriller",
+      "Trailer":""
+  
+    },
+    {
+      "id":"12",
+      "Title": "Hunter x Hunter Movie 2: The Last Mission",
+      "PicURL":"https://images7.alphacoders.com/538/thumb-1920-538217.jpg",
+      "Descrip":"Nen: the hidden source of energy and potential that runs through everyone, and gives those that master it a source of great power. Inside Nen is the potential for limitless light and limitless darkness. The Hunter Association has arisen to control access to it. Hunters come in many shapes and forms, and with many different appetites - but all of them have learned to master Nen, and use it to chase wealth, power, and their dreams. The greatest and most powerful Hunter is Isaac Netero, chairman of the Hunter Association. Decades ago he sealed away Jed, a Hunter who had mastered the use of On, the dark shadow of Nen. Now On users have reappeared at the Heaven's Arena Battle Olympia tournament. For Netero, this is the last mission: to protect the Association and the world from a threat driven by hatred and the thirst for revenge. And he's going to need all the help he can get in order to succeed.",
+      "Score": "7.24",
+      "Genres":"Action, Adventure, Super Power, Fantasy, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"13",
+      "Title": "A Silent Voice",
+      "PicURL":"https://images3.alphacoders.com/691/thumb-1920-691201.png",
+      "Descrip":"s a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye. Now in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends. Koe no Katachi tells the heartwarming tale of Shouya's reunion with Shouko and his honest attempts to redeem himself, all while being continually haunted by the shadows of his past.",
+      "Score": "8.98",
+      "Genres":" Drama, School, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"14",
+      "Title": "Break Blade",
+      "PicURL":"https://wallpapersbq.com/images/broken-blade/broken-blade-wallpaper-8.jpg",
+      "Descrip":"Break Blade franchise",
+      "Score": "7.86",
+      "Genres":"Action, Fantasy, Mecha, Military, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"15",
+      "Title": "Piano no Mori",
+      "PicURL":"https://i.pinimg.com/originals/d9/e5/70/d9e5701021a89bc9ee559fcb941262b6.jpg",
+      "Descrip":"Piano no Mori tells the story of Shuuhei Amamiya, a transfer student, and Kai Ichinose, a problem child from the rough areas of town. Upon transferring to Moriwaki Elementary and telling the other kids about his talent for piano, Shuuhei quickly finds himself as the victim of bully Daigaku Kanehira. Daigaku dares Shuuhei to find and play a cursed piano in the forest, which leads him to meet Kai, who claims to be the owner of the piano and the only one who can play it. Intrigued, Shuuhei follows Kai to the hidden piano in the forest and listens to him play a beautiful medley. Earning the respect of not only Shuuhei but school music teacher Sousuke Ajino as well, Kai now finds himself formally learning how to play the piano.",
+      "Score": "7.66",
+      "Genres":"Adventure, Music, Comedy, Drama, School, Seinen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"16",
+      "Title": "Whisper of the Heart",
+      "PicURL":"https://images6.alphacoders.com/831/thumb-1920-831830.jpg",
+      "Descrip":"Shizuku Tsukishima is an energetic 14-year-old girl who enjoys reading and writing poetry in her free time. Glancing at the checkout cards of her books one evening, she notices that her library books are frequently checked out by a boy named Seiji Amasawa. Curiosity strikes Shizuku, and she decides to search for the boy who shares her love for literature.  Meeting a peculiar cat on the train, Shizuku follows the animal and is eventually led to a quaint antique shop, where she learns about a cat statuette known as The Baron. Taking an interest in the shop, she surprisingly finds Seiji, and the two quickly befriend one another. Shizuku learns while acquainting herself with Seiji that he has a dream that he would like to fulfill, causing her dismay as she remains uncertain of her future and has yet to recognize her talents.",
+      "Score": "8.23",
+      "Genres":"Slice of Life, Drama, Romance, Shoujo",
+      "Trailer":""
+  
+    },
+    {
+      "id":"17",
+      "Title": "In This Corner of the World",
+      "PicURL":"https://wallpaperaccess.com/full/2674358.jpg",
+      "Descrip":"Suzu Urano is a pure and kindhearted girl who loves to draw and keep her head in the clouds. Growing up in the outskirts of Hiroshima with her family, she is more than happy to help with her grandmother's nori business. However, when she becomes of age, Suzu leaves her beloved home to marry Shuusaku Houjou, a man she barely knows. As she integrates into her new husband's household, the homesick bride struggles to adjust to the unfamiliar environment as the war effort extends far beyond its point of no return. When the war reaches Suzu's own backyard and peace gives way to brutality, how will she support herself and those she comes to love along the way?",
+      "Score": "8.23",
+      "Genres":"Historical, Drama, Seinen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"18",
+      "Title": "5 Centimeters Per Second",
+      "PicURL":"https://wallpaperaccess.com/full/1523322.jpg",
+      "Descrip":"What happens when two people love each other but just aren't meant to be together? Takaki Toono and Akari Shinohara are childhood friends, but circumstances beyond their control tear them apart. They promise to stay in contact, and although the progression of time widens the distance between them, the chain of memories remains ever-present.",
+      "Score": "7.67",
+      "Genres":"Drama, Romance, Slice of Life",
+      "Trailer":""
+  
+    },
+    {
+      "id":"19",
+      "Title": "A Letter to Momo",
+      "PicURL":"https://www.slantmagazine.com/wp-content/uploads/2014/07/lettertomomo.jpg",
+      "Descrip":"After the unexpected death of her father, 11-year-old Momo Miyaura leaves Tokyo with her mother and moves to an old remote island in Seto Inland Sea. The only memento she has from her father is an unfinished letter with only two words inside: Dear Momo—along with her heart's unrest from it. In the new and unfamiliar small town, Momo reluctantly tries to adjust to the outmoded wooden buildings, silent crop fields, and mysterious isolated shrines. One day, while exploring the attic of her new home, she finds a worn out picture book about youkai. Following this discovery, strange things begin to happen around town, and Momo is greeted by the arrival of three troublesome youkai.Momo e no Tegami tells the story of a young girl as she struggles to adapt to her bizarre new life and ultimately come to terms with her father's mysterious letter.",
+      "Score": "7.62",
+      "Genres":"Supernatural, Drama",
+      "Trailer":""
+  
+    },
+    {
+      "id":"20",
+      "Title": "Made in Abyss Movie 3",
+      "PicURL":"https://images7.alphacoders.com/860/thumb-1920-860635.jpg",
+      "Descrip":"Continuing their perilous descent down the Abyss, Riko, Regu, and newfound friend Nanachi reach the Abyss' fifth layer, The Sea of Corpses. Upon arriving at the research station known as Idofront, the main trio encounter the mysterious Prushka, the alleged daughter of Bondrewd, who leads them to the White Whistle responsible for Nanachi's dark past. Despite the welcoming appearances of Idofront's residents, Nanachi warns the young adventurers that things are not always what they seem. With the only route to the sixth layer shrouded in mystery and Bonedrewd's schemes awaiting them, what sacrifices must be made in order to continue the journey down to the bottom of the Abyss?",
+      "Score": "8.71",
+      "Genres":"Sci-Fi, Adventure, Mystery, Drama, Fantasy",
+      "Trailer":""
+  
+    },
+    {
+      "id":"21",
+      "Title": "The Cat Returns",
+      "PicURL":"https://images6.fanpop.com/image/photos/41700000/The-Cat-Returns-the-cat-returns-41768642-1280-720.jpg",
+      "Descrip":"High school student Haru Yoshioka is bored with the monotony of life. One day, she saves Prince Lune of the Cat Kingdom from being run over by a truck. As a token of gratitude, the Cat King sends her presents and invites her to the Cat Kingdom to become Lune's wife. Haru's inability to properly communicate with the cats leads to the misunderstanding that she has accepted the proposal. As Haru ponders on ways to escape the predicament, a mysterious voice instructs her to search for the Cat Bureau. However, not long after she finally arrives at the bureau, a horde of cats swarms in and forcibly takes her to the Cat Kingdom, along with a member of the Cat Bureau. Concerned for their safety, owner of the Cat Bureau, Baron Humbert von Gikkingen, follows close behind.",
+      "Score": "7.77",
+      "Genres":"Adventure, Drama, Fantasy",
+      "Trailer":""
+  
+    },
+    {
+      "id":"22",
+      "Title": "The Secret World of Arrietty",
+      "PicURL":"https://c4.wallpaperflare.com/wallpaper/981/487/776/the-secret-world-of-arrietty-wallpaper-preview.jpg",
+      "Descrip":"While spending the summer at his aunt's house, the young but sickly Shou makes an amazing discovery: after following the house cat into the bushes, he gets a glimpse of a miniature girl about the size of his finger! Calling her kind Borrowers, as they survive on tiny bits of human possessions, the girl introduces herself as Arrietty. As he discovers that she lives in the house basement with her parents, Pod and Homily, Shou becomes imaginably excited at the idea of such unique neighbors. However, he fails to understand the adversities they face on a daily basis. In addition to keeping their existence hidden, they must also embark on perilous adventures into human territory, from the house to the outdoors, in order to make a living. Despite her parents' warnings, Arrietty befriends Shou, stirring up unexpected events that may change their lives forever.",
+      "Score": "7.92",
+      "Genres":"Fantasy",
+      "Trailer":""
+  
+    },
+    {
+      "id":"23",
+      "Title": "Harmony",
+      "PicURL":"https://www.ganriki.org/media/harmony-00.jpg",
+      "Descrip":"In the future, Utopia has finally been achieved thanks to medical nanotechnology and a powerful ethic of social welfare and mutual consideration. This perfect world isn't that perfect though, and three young girls stand up to totalitarian kindness and super-medicine by attempting suicide via starvation. It doesn't work, but one of the girls—Tuan Kirie—grows up to be a member of the World Health Organization. As a crisis threatens the harmony of the new world, Tuan rediscovers another member of her suicide pact, and together they must help save the planet...from itself.",
+      "Score": "6.95",
+      "Genres":"Sci-Fi, Psychological",
+      "Trailer":""
+  
+    },
+    {
+      "id":"24",
+      "Title": "Demon Slayer The Movie: Mugen Train",
+      "PicURL":"https://images2.alphacoders.com/114/thumb-1920-1143278.jpg",
+      "Descrip":"After a string of mysterious disappearances begin to plague a train, the Demon Slayer Corps' multiple attempts to remedy the problem prove fruitless. To prevent further casualties, the flame pillar, Kyoujurou Rengoku, takes it upon himself to eliminate the threat. Accompanying him are some of the Corps' most promising new blood: Tanjirou Kamado, Zenitsu Agatsuma, and Inosuke Hashibira, who all hope to witness the fiery feats of this model demon slayer firsthand. Unbeknownst to them, the demonic forces responsible for the disappearances have already put their sinister plan in motion. Under this demonic presence, the group must muster every ounce of their willpower and draw their swords to save all two hundred passengers onboard. Kimetsu no Yaiba Movie: Mugen Ressha-hen delves into the deepest corners of Tanjirou's mind, putting his resolve and commitment to duty to the test.",
+      "Score": "8.76",
+      "Genres":"Action, Historical, Demons, Supernatural, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"25",
+      "Title": "Gurren Lagann The Movie: Childhood's End",
+      "PicURL":"https://images3.alphacoders.com/104/thumb-1920-104255.jpeg",
+      "Descrip":"Animation studio Gainax presented a website for the release of a movie adaptation of the Tengen Toppa Gurren Lagann TV series in the fall of 2008. Both the original director and series script editor will return to work on the new project. Gainax will also be hosting four events to celebrate this occasion at this year's Tokyo International Anime Fair, featuring voice actors from the anime.",
+      "Score": "8.16",
+      "Genres":"Action, Comedy, Mecha",
+      "Trailer":""
+  
+    },
+    {
+      "id":"26",
+      "Title": "Lupin III vs. Detective Conan: The Movie",
+      "PicURL":"https://www.animepowerlevel.com/wp-content/uploads/2013/06/ArticleLupinConan2.png",
+      "Descrip":"It is a cross over between the series Lupin III and Detective Conan and takes place after the television special Lupin the 3rd vs Detective Conan. The plot follows Conan Edogawa who sets out to apprehend Arsène Lupin III, the suspect of stealing a jewel called Cherry Sapphire.",
+      "Score": "7.90",
+      "Genres":"Action, Comedy, Mystery, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"27",
+      "Title": "Ponyo",
+      "PicURL":"https://images8.alphacoders.com/420/thumb-1920-420273.png",
+      "Descrip":"A goldfish sneaks away from home and floats off on the back of a jellyfish. After getting stuck in a glass jar, she drifts to the shore where she is freed by Sousuke, a five-year-old boy who lives with his mother Lisa in a house by the sea while his father Koichi works on a fishing boat. After healing a cut on Sousuke's finger by licking it, the goldfish is named Ponyo by her new friend.",
+      "Score": "7.89",
+      "Genres":"Adventure, Fantasy",
+      "Trailer":""
+  
+    },
+    {
+      "id":"28",
+      "Title": "Detective Conan: The Last Wizard of the Century",
+      "PicURL":"https://c4.wallpaperflare.com/wallpaper/847/91/815/detective-conan-anime-hd-wallpaper-preview.jpg",
+      "Descrip":"Kaitou Kid dares to challenge the police once more, setting his sights on the Russian Imperial Easter Egg. With the date, time, and place, the Osaka police force scrambles to stop him. But this time, Kid may have bitten off more than he can chew—Conan Edogawa, Heiji Hattori, and numerous others are also trying to get their hands on the jeweled egg.",
+      "Score": "8.04",
+      "Genres":"Adventure, Mystery, Comedy, Police, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"29",
+      "Title": "The Garden of Words",
+      "PicURL":"https://images8.alphacoders.com/506/thumb-1920-506620.jpg",
+      "Descrip":"On a rainy morning in Tokyo, Takao Akizuki, an aspiring shoemaker, decides to skip class to sketch designs in a beautiful garden. This is where he meets Yukari Yukino, a beautiful yet mysterious woman, for the very first time. Offering to make her new shoes, Takao continues to meet with Yukari throughout the rainy season, and without even realizing it, the two are able to alleviate the worries hidden in their hearts just by being with each other. However, their personal struggles have not disappeared completely, and as the end of the rainy season approaches, their relationship will be put to the test.",
+      "Score": "7.99",
+      "Genres":"Slice of Life, Psychological, Drama, Romance",
+      "Trailer":""
+  
+    },
+    {
+      "id":"30",
+      "Title": "Hotarubi no Mori e",
+      "PicURL":"https://images7.alphacoders.com/310/thumb-1920-310828.jpg",
+      "Descrip":"Intrigued by the tale of a mountain god, six-year-old Hotaru Takegawa loses her way in the ancient forest while visiting her uncle. Exhausted and desperate for help, Hotaru is thrilled to find a masked forest spirit named Gin. She learns the hard way that she should not touch the boy, or he would disappear. In spite of this, Gin leads Hotaru out of the forest and warns her never to return when she promises to come again with a gift. Paying no heed to his cautionary words, and despite being separated by both distance and planes of existence, Hotaru and Gin become close friends as she visits him every summer. However, their relationship and resolve are put to the test, when romantic feelings conflict with the one and only rule.",
+      "Score": "8.35",
+      "Genres":"Drama, Romance, Shoujo, Supernatural",
+      "Trailer":""
+  
+    },
+    {
+      "id":"31",
+      "Title": "Blame!",
+      "PicURL":"https://images2.alphacoders.com/806/thumb-1920-806799.png",
+      "Descrip":"A young girl named Zuru sets out on an expedition through a post-apocalyptic city controlled by machines in a desperate hunt for food. Things go awry when her team accidently triggers the city's AI defense program called the Safeguard. Attacked by the machines, her companions are on the verge of being annihilated when a mysterious man named Killy arrives and exterminates the hostile units. Despite his heroic intervention, Zuru is hesitant to trust Killy and questions his motives. He reveals to have come from thousands of levels below the city in order to find humans possessing the Net Terminal Genes—a trait that would allow humans to regain control of their civilization and shut down the Safeguard. After hearing his story, Zuru and the rest of her team join Killy and embark on a journey in search of the Genes that could prove to be mankind's last hope of survival.",
+      "Score": "7.10",
+      "Genres":"Action, Sci-Fi, Psychological, Drama, Mecha, Seinen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"32",
+      "Title": "Blood-C: The Last Dark",
+      "PicURL":"https://879ed873-madman-com-au.akamaized.net/wallpapers/bloodc-the-last-dark-movi_890_1680.png",
+      "Descrip":"Having escaped the many horrors of her village, Saya Kisaragi vows to hunt down the monster responsible and make him pay with his life. As she tears through flesh and bone for her vendetta, she encounters SIRRUT, a group of ingenious hackers, who enlist Saya to help them defeat a common enemy—someone she knows all too well.",
+      "Score": "7.18",
+      "Genres":"Action, Horror, Supernatural, Vampire",
+      "Trailer":""
+  
+    },
+    {
+      "id":"33",
+      "Title": "Hal",
+      "PicURL":"https://images.alphacoders.com/840/thumb-1920-840701.jpg",
+      "Descrip":"Kurumi is a beautiful young woman whose beloved boyfriend, Hal, died in a sudden airplane accident. Left heartbroken and gloomy, she isolates herself in a small house. But this soon comes to change when her grandfather requests the help of a humanoid robot named Q01 Taking on the appearance of Hal, Q01 is sent to Kurumi's house in order to save her from her state of despair. As Hal returns day after day and increases his efforts, Kurumi, despite her initial reluctance, slowly begins to open up to him and break free from her depression. But there is more to Hal than meets the eye, and these two will soon learn an unexpected truth about this relationship between a human and an android.",
+      "Score": "7.46",
+      "Genres":"Sci-Fi, Drama, Romance, Shoujo",
+      "Trailer":""
+  
+    },
+    {
+      "id":"34",
+      "Title": "The Boy and the Beast",
+      "PicURL":"https://vistapointe.net/images/the-boy-and-the-beast-1.jpg",
+      "Descrip":"Two souls, living very different lives, wander alone and isolated in their respective worlds. For nine-year-old Ren, the last person who treated him with any form of kindness has been killed and he is shunned by what is left of his family. With no parents, no real family, and no place to go, Ren escapes into the confusing streets and alleyways of Shibuya. Through the twists and turns of the alleys, Ren stumbles into the intimidating Kumatetsu, who leads him to the beast realm of Shibuten.",
+      "Score": "8.31",
+      "Genres":"Adventure, Supernatural",
+      "Trailer":""
+  
+    },
+    {
+      "id":"35",
+      "Title": "Detective Conan Movie 18: The Sniper from Another Dimension",
+      "PicURL":"https://i.pinimg.com/originals/19/40/e2/1940e218ab7413f708a8ca66736927b4.jpg",
+      "Descrip":"One morning, at the observation deck of the Bell Tree Tower, a man is suddenly shot dead by an unknown sniper. Conan Edogawa, who happened to be visiting as the murder occurred, rushes to apprehend the sniper but fails to do so. He later learns that the suspect for the incident, Timothy Hunter, is a former member of the Navy Special Ops squad and was already being investigated for a previous murder case. The FBI believes that there are at least three people Timothy wants dead. However, after the deaths of two of them, Timothy himself is killed, throwing the investigation into disarray.",
+      "Score": "8.08",
+      "Genres":"Action, Mystery, Police, Shounen",
+      "Trailer":""
+  
+    },
+    {
+      "id":"36",
+      "Title": "Colorful",
+      "PicURL":"https://i.imgur.com/3VM657c.jpeg",
+      "Descrip":"Upon arriving at the train station of death, an impure soul is granted a second chance at life against his will. Reincarnating into the body of Makoto Kobayashi, a 14-year-old boy who recently committed suicide, the soul is tasked to identify the boy's greatest sin in life within a time limit of six months. Although it remains reluctant toward continuing life as Makoto, the soul soon begins to notice the complexities of people's emotions and action",
+      "Score": "7.81",
+      "Genres":"Drama, Slice of Life, Supernatural",
+      "Trailer":""
+  
+    },
+    {
+      "id":"37",
+      "Title": "The Empire of Corpses",
+      "PicURL":"https://images.alphacoders.com/726/thumb-1920-726014.jpg",
+      "Descrip":"By the 19th century, humanity has cultivated technology enabling the reanimation of corpses. Unable to experience individual thoughts or emotions, the corpses are programmed by humans to act as laborers in various occupations. This newfound technology, however, comes with a catch. Science may be able to restore the corpses' ability to move, yet it cannot return what every corpse loses at death: the soul. But Doctor Victor Frankenstein, who vanished shortly after his revolutionary work on corpse reanimation, is said to have revived the only corpse in possession of a soul. In pursuit of this scientific knowledge, London medical student John Watson hopes to fulfill his promise to his late partner, Friday. After being scouted by a government agency, Watson is on a hunt to obtain Frankenstein's notes, which he believes hold the key to the secrets of the soul. During his search, Watson uncovers the harsh realities of the developing corpse technology and the price he must pay to advance his research.",
+      "Score": "6.90",
+      "Genres":"Sci-Fi, Historical, Psychological",
+      "Trailer":""
+  
+    },
+    {
+      "id":"38",
+      "Title": "Wolf Children",
+      "PicURL":"https://images8.alphacoders.com/839/thumb-1920-839456.jpg",
+      "Descrip":"Hana, a hard-working college student, falls in love with a mysterious man who attends one of her classes though he is not an actual student. As it turns out, he is not truly human either. On a full moon night, he transforms, revealing that he is the last werewolf alive. Despite this, Hana's love remains strong, and the two ultimately decide to start a family. Hana gives birth to two healthy children—Ame, born during rainfall, and Yuki, born during snowfall—both possessing the ability to turn into wolves, a trait inherited from their father. All too soon, however, the sudden death of her lover devastates Hana's life, leaving her to raise a peculiar family completely on her own. The stress of raising her wild-natured children in a densely populated city, all while keeping their identity a secret, culminates in a decision to move to the countryside, where she hopes Ame and Yuki can live a life free from the judgments of society. Wolf Children is the heartwarming story about the challenges of being a single mother in an unforgiving modern world.",
+      "Score": "8.62",
+      "Genres":"Fantasy, Slice of Life",
+      "Trailer":""
+  
+    },
+    {
+      "id":"39",
+      "Title": "Princess Mononoke",
+      "PicURL":"https://c4.wallpaperflare.com/wallpaper/155/927/750/princess-mononoke-wallpaper-preview.jpg",
+      "Descrip":"When an Emishi village is attacked by a fierce demon boar, the young prince Ashitaka puts his life at stake to defend his tribe. With its dying breath, the beast curses the prince's arm, granting him demonic powers while gradually siphoning his life away. Instructed by the village elders to travel westward for a cure, Ashitaka arrives at Tatara, the Iron Town, where he finds himself embroiled in a fierce conflict: Lady Eboshi of Tatara, promoting constant deforestation, stands against Princess San and the sacred spirits of the forest, who are furious at the destruction brought by the humans. As the opposing forces of nature and mankind begin to clash in a desperate struggle for survival, Ashitaka attempts to seek harmony between the two, all the while battling the latent demon inside of him. Princess Mononoke is a tale depicting the connection of technology and nature, while showing the path to harmony that could be achieved by mutual acceptance.",
+      "Score": "8.70",
+      "Genres":"Action, Adventure, Fantasy",
+      "Trailer":""
+  
+    },
+    {
+      "id":"40",
+      "Title": "The Wind Rises ",
+      "PicURL":"https://c4.wallpaperflare.com/wallpaper/548/131/670/studio-ghibli-nature-landscape-the-wind-rises-colorful-hd-wallpaper-preview.jpg",
+      "Descrip":"Although Jirou Horikoshi's nearsightedness prevents him from ever becoming a pilot, he leaves his hometown to study aeronautical engineering at Tokyo Imperial University for one simple purpose: to design and build planes just like his hero, Italian aircraft pioneer Giovanni Battista Caproni. His arrival in the capital coincides with the Great Kanto Earthquake of 1923, during which he saves a maid serving the family of a young girl named Naoko Satomi; this disastrous event marks the beginning of over two decades of social unrest and malaise leading up to Japan's eventual surrender in World War II.",
+      "Score": "8.11",
+      "Genres":"Drama, Historical, Romance",
+      "Trailer": "https://www.youtube.com/watch?v=2QFBZgAZx7g&ab_channel=MovieclipsTrailers"
+  
+    },
+    {
+      "id":"41",
+      "Title": "Castle in the Sky",
+      "PicURL":"https://goggler.my/wp-content/uploads/2020/02/CastleIntheSkyPromo.jpg",
+      "Descrip":"In a world filled with planes and airships, Sheeta is a young girl who has been kidnapped by government agents who seek her mysterious crystal amulet. While trapped aboard an airship, she finds herself without hope—that is, until the ship is raided by pirates. Taking advantage of the ensuing confusion, Sheeta manages to flee from her captors. Upon her escape, she meets Pazu, a boy who dreams of reaching the fabled flying castle, Laputa. The two decide to embark on a journey together to discover this castle in the sky. However, they soon find the government agents back on their trail, as they too are trying to reach Laputa for their own greedy purposes.",
+      "Score": "8.29",
+      "Genres":"Adventure, Fantasy, Romance, Sci-Fi",
+      "Trailer":"https://youtu.be/8ykEy-yPBFc"
+    },
+    {
+      "id":"42",
+      "Title": "My Neighbor Totoro",
+      "PicURL":"https://wallpapercave.com/wp/wp3289151.jpg",
+      "Descrip":"In 1950s Japan, Tatsuo Kusakabe relocates himself and his two daughters, Satsuki and Mei, to the countryside to be closer to their mother, who is hospitalized due to long-term illness. As the girls grow acquainted with rural life, Mei encounters a small, bunny-like creature in the yard one day. Chasing it into the forest, she finds Totoro—a giant, mystical forest spirit whom she soon befriends. Before long, Satsuki too meets Totoro, and the two girls suddenly find their lives filled with magical adventures in nature and fantastical creatures of the woods.",
+      "Score": "8.28",
+      "Genres":"Adventure, Comedy, Supernatural",
+      "Trailer":"https://youtu.be/92a7Hj0ijLs"
+    },
+    {
+      "id":"43",
+      "Title": "The Girl Who Leapt Through Time",
+      "PicURL":"https://images3.alphacoders.com/299/thumb-1920-2999.jpg",
+      "Descrip":"Makoto Konno is in her last year of high school, but is having a hard time deciding what to do with her future. In between enduring the pressure of her teachers and killing time with her best friends, Makoto's life suddenly changes when she accidentally discovers that she is capable of literally leaping through time.",
+      "Score": "8.17",
+      "Genres":"Adventure, Drama, Romance, Sci-Fi",
+      "Trailer":"https://youtu.be/eWnTeKEsDlU"
+  
+    },
+    {
+      "id":"44",
+      "Title": "Origin: Spirits of the Past",
+      "PicURL":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b44a5e00-f8ba-452c-b03b-a0322b11ecf0/d3flsni-a2d8f278-ba0a-4931-ad6b-b5511387f256.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I0NGE1ZTAwLWY4YmEtNDUyYy1iMDNiLWEwMzIyYjExZWNmMFwvZDNmbHNuaS1hMmQ4ZjI3OC1iYTBhLTQ5MzEtYWQ2Yi1iNTUxMTM4N2YyNTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RtT9WoL6chZZjl1FvPfw0xhMPzfk7-S8JY68-wOq_Sg",
+      "Descrip":"Three hundred years ago, a genetic experiment gone wrong caused the mutation of all forests on Earth. Armed with consciousness, the vegetation sought to destroy all of humankind, and the war that ensued turned the planet into a hellish dystopia. In the present day, Agito, a young boy, lives with his father in Neutral City—a village maintaining an uneasy truce with the neighboring forest. One day, Agito, on his way to collect water, becomes separated from his friend and stumbles upon a relic of the past: a girl sleeping in a mysterious machine. Agito awakens the girl, Toola Cm Sacl, and introduces her to the village. But outside forces have ulterior motives for the girl, who holds the key to restore the Earth. Misguided by Shunack, a soldier from the old world hellbent on destroying the forest, Toola follows him despite Agito's warning. Determined to save Toola and unify humankind with the forest, Agito borrows the power of the forest and pursues her.",
+      "Score": "7.10",
+      "Genres":"Adventure, Drama, Fantasy, Romance, Sci-Fi",
+      "Trailer":"https://youtu.be/-8JU3rvQ6y4"
+    },
+    {
+      "id":"45",
+      "Title": "Trigun: Badlands Rumble",
+      "PicURL":"https://vistapointe.net/images/trigun-5.jpg",
+      "Descrip":"Vash the Stampede is a contradiction. He has a notorious reputation as -The Humanoid Typhoon-, laying anything he comes across to waste on the desolate planet of Gunsmoke. However, Vash is in fact very non-confrontational and kind-hearted, living by a code of pacifism. Twenty years ago, a high-profile bank heist went sour. The ringleader, Gasback Gallon Getaway, swore to get back at his backstabbing crew and the man who stopped him from killing them: Vash the Stampede. In the present day, the traitorous crew has been living the good life as successful entrepreneurs and politicians. Although two decades have passed, Gasback's bitterness has not waned as he aims to take them down one by one, by any means necessary. Just in time to foil Gasback's plot, Vash has arrived in Macca City. Teaming up with the mysterious Amelia Ann McFly, along with the insurance agents Milly Thompson and Meryl Stryfe, Vash is ready to rumble.",
+      "Score": "7.96",
+      "Genres":"Action, Adventure, Comedy, Drama, Sci-Fi, Shounen",
+      "Trailer":"https://youtu.be/F1OWwhrB7nk"
+    },
+  
+    {
+      "id":"46",
+      "Title": "Bleach Movie 2: The DiamondDust Rebellion",
+      "PicURL":"https://i.pinimg.com/originals/e8/a6/64/e8a664883a0f8321bd347cdc86e6d8ca.jpg",
+      "Descrip":"Assigned to protect a royal procession transporting a powerful artifact called the -Ouin-, Squad 10 gathers in the human world as Captain Toushirou Hitsugaya and Lieutenant Rangiku Matsumoto observe the area cautiously. However, the caravan is suddenly struck by a group of assailants who wreak havoc on the procession, stealing the Ouin in the process. After a brief clash with one of the attackers, the distraught Hitsugaya pursues the escaping thieves, leaving behind Matsumoto and the disoriented squad. Following the incident, the Seireitei brands Hitsugaya a traitor for abandoning his post and puts Squad 10 on indefinite lockdown.",
+      "Score": "7.44",
+      "Genres":"Action, Adventure, Comedy, Super Power, Supernatural, Shounen",
+      "Trailer":"https://youtu.be/Nl1rdgDbnBY"
+    },
+  
+    {
+      "id":"47",
+      "Title": "Patema Inverted",
+      "PicURL":"https://c4.wallpaperflare.com/wallpaper/431/820/916/patema-inverted-wallpaper-preview.jpg",
+      "Descrip":"Patema is a plucky young girl from an underground civilization boasting an incredible network of tunnels. Inspired by a friend that mysteriously went missing, she is often reprimanded due to her constant excursions of these tunnels due to her royal status. After she enters what is known as the forbidden zone, she accidentally falls into a giant bottomless pit after being startled by a strange creature.",
+      "Score": "8.02",
+      "Genres":"Adventure, Sci-Fi",
+      "Trailer":""
+  
+      
+    },
+    {
+      "id":"48",
+      "Title": "Spirited Away",
+      "PicURL":"https://data.whicdn.com/images/336513416/original.jpg",
+      "Descrip":"Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls. Ghostly apparitions and food that turns her parents into pigs are just the start—Chihiro has unwittingly crossed over into the spirit world. Now trapped, she must summon the courage to live and work amongst spirits, with the help of the enigmatic Haku and the cast of unique characters she meets along the way.",
+      "Score": "8.81",
+      "Genres":"Adventure, Supernatural, Drama",
+      "Trailer":"https://youtu.be/ByXuk9QqQkk"
+    },
+    {
+      "id":"49",
+      "Title": "Summer Wars",
+      "PicURL":"https://wallpapermemory.com/uploads/298/summer-wars-background-hd-1680x1050-349418.jpg",
+      "Descrip":"OZ, a virtual world connected to the internet, has become extremely popular worldwide as a spot for people to engage in a large variety of activities, such as playing sports or shopping, through avatars created and customized by the user. OZ also possesses a near impenetrable security due to its strong encryption, ensuring that any personal data transmitted through the networks will be kept safe in order to protect those who use it. Because of its convenient applications, the majority of society has become highly dependent on the simulated reality, even going as far as entrusting the system with bringing back the unmanned asteroid explorer, Arawashi.",
+      "Score": "8.07",
+      "Genres":"Sci-Fi, Comedy",
+      "Trailer":"https://youtu.be/ggPPyOmomDk"
+    }
+  ]

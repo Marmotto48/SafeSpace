@@ -1,0 +1,36 @@
+
+.card {
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 30px;
+	margin: 10px auto;
+	text-align: center;
+	width: 250px;
+	max-width: 100%;
+}
+
+.card img {
+	width: 188px;
+	height: 188px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card h4 {
+	margin: 10px 0;
+}
+
+.card small {
+	color: #777;
+	display: block;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.cards {
+		flex-wrap: wrap;
+	}
+}

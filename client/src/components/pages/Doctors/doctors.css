@@ -1,0 +1,36 @@
+.doc-page{
+    /* padding-top: 70px; */
+    margin-bottom: 50%;
+}
+
+.doc-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.doc-page .article {
+    margin-bottom: 50px;
+  }
+  
+  .doc-page .article p { 
+    font-family: "Open Sans";
+    color: #000000;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 75px;
+    columns: 3 200px;
+    column-gap: 2em;
+    column-rule: 1px solid #eff2fa;
+    font-size: 12px;
+  }
+  
+  .doc-page .article  p:first-letter { 
+    color: #e35b5a;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding: 0 8px;
+  }

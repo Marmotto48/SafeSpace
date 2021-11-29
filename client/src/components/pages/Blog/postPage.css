@@ -1,0 +1,135 @@
+.post-page-0 {
+  display: flex;
+  padding: 100px 20px 0px 20px;
+  justify-content: space-between;
+}
+.post-page {
+  width: 60%;
+  background-color: #e8f3f89d;
+  border-radius: 15px;
+  margin: 0px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 20px 20px ;
+
+}
+.post-page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.post-page-header h2 {
+  flex: 1;
+}
+
+.post-page-seperator {
+  height: 15px;
+  background-color: rgba(128, 128, 128, 0.096);
+}
+.post-page-1 {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.post-page-profile {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.445);
+  padding: 15px;
+}
+.post-page-post {
+  flex: 4;
+  background-color: rgba(255, 255, 255, 0.74);
+  padding: 15px;
+  border-left-color: rgba(128, 128, 128, 0.096);
+  border-left-style: double;
+  /* border-left-widt; */
+  border-top-left-radius: 15px;
+}
+.post-page-profile img {
+  display: block;
+  width: 55%;
+  margin: 10px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.post-page-seperator-2 {
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.096);
+  color: lightslategray;
+  font-size: 12px;
+}
+.post-page-profile span {
+  background-color: rgba(255, 99, 71, 0.157);
+  padding: 1.5px 7px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.post-page-profile span:hover {
+  background-color: rgba(128, 128, 128, 0.719);
+  color: white;
+}
+/******************************/
+.comments-section {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.write-comment {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 20px auto;
+}
+.write-comment input {
+  background: white;
+  border: 2px solid #f1f1f1;
+  padding: 5px 15px;
+  border-radius: 20px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.modal-btn-close {
+  width: 100px;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(149, 149, 149, 0.966);
+  color: white;
+}
+.modal-btn-close:hover {
+  background-color: rgba(92, 91, 91, 0.966);
+
+}
+.modal input {
+  background: #efefefce;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  margin-top: 7px;
+}
+.modal label {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.post-page-seperator-3 {
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.096);
+  color: lightslategray;
+  font-size: 12px;
+  width: 80%;
+  margin: auto;
+}
+
+/**/
+.star-PP {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.star-PP:hover {
+  color : goldenrod;
+}

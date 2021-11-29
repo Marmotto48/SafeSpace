@@ -1,0 +1,61 @@
+.about-text p {
+  text-indent: 50px;
+  text-align: justify;
+}
+.title-css {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Explora', cursive;
+  font-weight: 900;
+  font-size: 52px;
+  color: rgb(59, 4, 110);
+}
+.about-section1 {
+  width: 70%;
+  margin: 100px auto 0px auto;
+}
+.about-section1 h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Explora', cursive;
+  font-weight: 900;
+  font-size: 52px;
+  color: rgb(59, 4, 110);
+}
+#img1-about {
+  float: left;
+  width: 45%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+#img2-about {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.about-section2{
+    text-align: center;
+    padding: 50px;
+    margin-top: 80px;
+    background: #F5F9F6 ;
+}
+.about-section2 h1 {
+    margin-bottom: 50px;
+    
+}
+.carousel {
+    margin: auto;
+    width: 50%;
+}
+
+.box-container2{
+  padding: 100px;
+    text-align: center;
+    background-color: #F5F9F6 ;
+}
+.box-container2 > div {
+  margin-right: 20px;
+
+}

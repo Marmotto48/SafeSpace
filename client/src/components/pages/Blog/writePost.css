@@ -1,0 +1,234 @@
+.write-post {
+  width: 50%;
+  background-color: #e8f3f89d;
+  border-radius: 15px;
+  margin: 0px  auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+
+}
+form {
+  padding: 50px;
+  z-index: 40;
+}
+
+.addPost-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.472)
+  );
+  border-radius: 2rem;
+  padding: 10px 30px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  margin-bottom: 10px;
+}
+.addPost-card input, .addPost-card  select {
+  background: #efefefce;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 7px;
+}
+
+.addPost-card p {
+  width: 30%;
+  margin: auto 0px;
+  font-size: 15px;
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.desc-input {
+  height: 150px;
+  line-height: 100px;
+}
+/* .addPost-card textarea {
+    width: 80%;
+    height: 80px;
+    resize: none;
+    background: #efefefce;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  width: 100%;
+} */
+.addPost-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.addPost-btn {
+  width: 160px;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(18, 194, 185, 0.966);
+  color: white;
+}
+.addPost-btn:hover {
+  background-color: rgb(3, 187, 178);
+}
+
+/*********************************/
+.check {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.visit-post-btn {
+  width: 160px;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(20, 220, 210, 0.287);
+  color: rgb(2, 112, 107);
+}
+
+.visit-post-btn:hover {
+  background-color: rgba(2, 112, 106, 0.39);
+  color: white;
+}
+
+/* btn */
+.addPost-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/********circles****************/
+
+.circle-3,
+.circle-4,
+.circle-5,
+.circle-6 {
+  background: rgb(197, 120, 120);
+  background: linear-gradient(
+    to right bottom,
+    #8dc6dd5e,
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.circle-3 {
+  top: 18%;
+  left: 15%;
+}
+.circle-4 {
+  bottom: -10%;
+  right: 10%;
+}
+
+.circle-5 {
+  height: 10rem;
+  width: 10rem;
+}
+.circle-5 {
+  bottom: -10%;
+  left: 10%;
+}
+.circle-6 {
+  height: 12rem;
+  width: 12rem;
+}
+.circle-6 {
+  bottom: -5%;
+  left: 5%;
+}
+/*******category********/
+.select-categ {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.question-icon {
+  font-size: 22px;
+  margin-left: 10px;
+  color: #b6b5b5;
+} 
+.question-icon:hover{
+  color: rgba(2, 112, 106, 0.39);
+
+}
+
+/***************toggel******/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.write-post .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/******************************/
+.text-editor{
+  width: 50%;
+}

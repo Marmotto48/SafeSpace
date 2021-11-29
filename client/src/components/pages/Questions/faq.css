@@ -1,0 +1,89 @@
+.faq-section1 {
+  width: 90%;
+  padding: 20px 100px;
+  margin: 100px auto 0px auto;
+  background-color: #f1f1f159;
+}
+.faq-section1-1 {
+  padding: 0px 50px;
+}
+.faq-section1 h1 {
+  /* margin-bottom: 30px;
+  font-weight: 200;
+  color: rgb(59, 4, 110);
+  font-family: 'Explora', cursive; */
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Explora', cursive;
+  font-weight: 900;
+  font-size: 52px;
+  color: rgb(59, 4, 110);
+}
+.faq-section1 a {
+  color: rgb(89, 85, 97);
+  font-weight: 500;
+}
+.faq-section1 a:hover {
+  color: rgb(0, 0, 0);
+}
+.faq-section1 h3 {
+  color: #658ec6;
+  font-size: 18px;
+}
+/*********************/
+.faq .tabs {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq .tab {
+  width: 100%;
+  color:rgba(59, 4, 110, 0.651);
+  overflow: hidden;
+  margin: -5px;
+}
+.faq .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #00000049;
+  font-weight: 500;
+  cursor: pointer;
+  /* Icon */
+}
+.faq .tab-label:hover {
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  color: #00000049;
+}
+
+.faq .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.faq .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e5023;
+  cursor: pointer;
+}
+.faq .tab-close:hover {
+  background: #1a252f4b;
+}
+.faq input:checked + .tab-label {
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  color:rgba(59, 4, 110, 0.89);
+}
+.faq input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.faq input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}

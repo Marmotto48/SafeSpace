@@ -1,0 +1,365 @@
+.profile {
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.profile h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.profile p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 12px;
+  margin: -0px;
+}
+.profile h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.tab-content h5 {
+  margin: 0;
+}
+.main {
+  font-family: "Poppins", sans-serif;
+  /* min-height: 135vh; */
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+}
+.glass {
+  margin: 60px 10px;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle-1,
+.circle-2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-1 {
+  top: 18%;
+  left: 5%;
+}
+.circle-2 {
+  bottom: -8%;
+  right: 10%;
+}
+#img-profile {
+  height: 50px;
+  width: 50px;
+}
+
+.dashboard {
+  /* flex: 1; */
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  padding-top: 5px;
+}
+#profile-avatar-profile {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+.seperator {
+  border-top: 0.5px solid #ccc;
+  width: 70%;
+}
+.seperator-2{
+  border-top: 0.5px solid #ccc;
+  width: 100%;
+}
+.links {
+  margin: 10px 0px;
+}
+.link {
+  display: flex;
+  padding: 8px 50px;
+  text-align: left;
+  font-size: 32px;
+  color: #4a668d;
+  cursor: pointer;
+  font-weight: 500;
+}
+.link:hover, .link label:hover {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  color: white;
+}
+.link label, .link h2{
+  padding: 0rem 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  background: none
+}
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 12px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center;
+  width: 155px;
+  height: 50px;
+  text-align: left;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.pro:hover {
+  background: linear-gradient(to top right, #6cdaeb, #09d3ae);
+}
+.pro img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+.pro h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  margin-top: 7px;
+}
+
+/******************************/
+.user-info {
+  /* flex: 2; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0px 20px;
+}
+.profile-cards {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile-card {
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8)
+  );
+  border-radius: 2rem;
+  padding: 5px 30px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  margin-bottom: 10px;
+  width: 320px;
+}
+.profile-card input {
+  background: #6cdaeb44;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.profile-card select {
+  font-size: 12px;
+}
+.profile-card p {
+  width: 30%;
+  margin: auto 0px;
+  font-size: 12px;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 236, 236);
+}
+
+#img-profile {
+  width: 50px;
+  height: 50px;
+}
+/*********/
+.profile-card select {
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  background: #6cdaeb44;
+  color: #4a668d;
+}
+
+/***********SECTION 2********************/
+.glass-2 {
+  margin: 60px 30px;
+  padding: 15px;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+
+.test {
+  margin-top: 60px;
+}
+.tabs-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.row {
+  display: flex;
+}
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+/* Accordion styles */
+.glass-2 .tabs {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.glass-2 .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin: -5px;
+}
+.glass-2 .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: linear-gradient(to top right, #6cdaeb, #06c5a2);
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e5023;
+  cursor: pointer;
+  
+}
+.tab-close:hover {
+  background: #1a252f4b;
+}
+input:checked + .tab-label {
+  background: linear-gradient(to top right, #6cdaeb, #06c5a2);
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+/************************************************/
+@media only screen and (max-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+}
+/*****/
+.add-todo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*********/
+.fileUpload {
+	background: #00bcbe;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #fff;
+	font-size:12px;
+	margin: 1.25em auto;/*20px/16px 0*/
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	width: 100px;
+   cursor: pointer;
+}
+.fileUpload:hover, .fileUpload:active, .fileUpload:focus {
+	background: #00a2a4;
+  cursor: pointer;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 148px;
+    height: 46px;
+  cursor: pointer;
+}
+
+.fileUpload input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}

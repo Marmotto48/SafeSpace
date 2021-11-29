@@ -1,0 +1,264 @@
+/*** SECTION 1 :  BANNER ***/
+.hp{
+  padding-top: 54px;
+}
+.banner {
+  background-image: url(https://images.unsplash.com/photo-1518963534257-f901d4d46f59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-title {
+  background-color: #c8bdf142;
+  padding: 30px 50px;
+  border-radius: 15px;
+  color: rgb(85, 75, 88);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 30px;
+}
+
+/*** SECTION 2 :  OUR SERVICES ***/
+.box-container {
+  height: 140px;
+  margin: auto;
+  padding: 0px 100px;
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 241, 241, 1) 36%,
+    rgba(255, 255, 255, 0) 65%
+  );
+}
+.card-service {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 50px;
+  margin: 0 auto;
+  height: 80px;
+  width: 250px;
+  font-size: 20px;
+  line-height: normal;
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(154, 159, 151, 0.2);
+}
+
+.inside-service-card {
+  flex-shrink: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  margin-right: 15px;
+}
+.blue-circle {
+  background-color: #4e5afe;
+  font-size: 28px;
+}
+.green-circle {
+  background-color: #00d9a5;
+  font-size: 35px;
+}
+
+.pink-circle {
+  background-color: #ff3d85;
+}
+
+/*** SECTION 3 :  ABOUT US ***/
+.about-hp {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #f1f1f1;
+}
+.about-hp-content {
+  width: 500px;
+}
+.img1-hp {
+  width: 40%;
+  border-radius: 50%;
+}
+/*** SECTION 4 :  OUR DOCTORS ***/
+.our-docs {
+  text-align: right;
+  margin-top: 50px;
+}
+.our-docs h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*** SECTION 5 :  OUR POSTS ***/
+.posts-hp {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+.posts-hp h1 {
+  margin-bottom: 40px;
+}
+.posts-hp-card {
+  position: relative;
+  display: block;
+  max-width: 264px;
+  max-height: 280px;
+  /* margin: 0 ; */
+  margin-left: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.posts-hp-card-header {
+  width: 100%;
+  height: 140px;
+  background-color: #9a9f97;
+  overflow: hidden;
+}
+
+.posts-hp-card-header .post-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.posts-hp-card-header .post-thumb img {
+  width: 100%;
+  transition: transform 0.2s linear;
+}
+
+.posts-hp-card-header .post-thumb:hover img {
+  transform: scale(1.2);
+}
+.posts-hp-card-container {
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+}
+.post-hp-body {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.post-hp-card-category {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 9;
+}
+
+.post-hp-card-category a {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #4e5afe;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.post-hp-card-category a:hover {
+  text-decoration: none;
+  background-color: #0756aa;
+  color: white;
+}
+
+.post-hp-title,
+.post-hp-title a {
+  color: #343531;
+}
+
+.post-hp-title:hover,
+.post-hp-title a:hover {
+  text-decoration: none;
+  color: #07be94;
+}
+
+.posts-hp-card .site-info {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6d7170;
+}
+
+.post-hp-avatar-img {
+  width: 28px;
+  height: 28px;
+}
+
+.post-hp-avatar-img {
+  margin-right: 6px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.post-hp-avatar-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-hp-avatar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.read-more {
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+.read-more:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #086edb;
+
+}
+
+@media (max-width: 950px) {
+  .box-container {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    margin: auto;
+  }
+  .card-service {
+    width: 500px;
+    margin-top: 5px auto;
+  }
+  /***/
+  .about-hp {
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-hp > div {
+    margin-bottom: 30px;
+  }
+}
