@@ -3,7 +3,7 @@ const app = express();
 require("dotenv").config();
 const connectDB = require("./config/connectDB");
 const path = require("path");
-PORT = process.env.PORT;
+const port = process.env.PORT || 5000;
 // const cors = require("cors");
 const socketio = require("socket.io");
 const http = require("http");
@@ -43,6 +43,6 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(process.env.PORT || 5000, (error) => {
-  error ? console.error(error) : console.log(`Server runing on port`);
+app.listen(port, (error) => {
+  error ? console.error(error) : console.log(`Server runing on port ${port}`);
 });
