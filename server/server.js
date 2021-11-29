@@ -43,6 +43,6 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(process.env.PORT || 3000, (error) => {
-  error ? console.error(error) : console.log(`Server runing on port ${process.env.PORT || 3000}`);
+app.listen(process.env.PORT || 5000, (error) => {
+  error ? console.error(error) : console.log(`Server runing on port`);
 });
