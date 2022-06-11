@@ -5,9 +5,20 @@ import about from "./about.png";
 import { RiMentalHealthLine } from "react-icons/ri";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { GiDoctorFace } from "react-icons/gi";
+import { Helmet } from "react-helmet-async";
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About us</title>
+        <meta
+          name="description"
+          content="All you need to know about Safe Space"
+          description="og:title" 
+        />
+        <meta charSet="utf-8" />
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <div className="banner">
         <span className="banner-title">
           <span>All you need to know</span>
@@ -75,18 +86,18 @@ const About = () => {
           <p>
             Psychiatry refers to a field of medicine focused specifically on the
             mind, aiming to study, prevent, and treat mental disorders in
-            humans. It has been described as an intermediary between
-            the world from a social context and the world from the perspective
-            of those who are mentally ill. People who specialize in
-            psychiatry often differ from most other mental health professionals
-            and physicians in that they must be familiar with both the social
-            and biological sciences. The discipline studies the operations
-            of different organs and body systems as classified by the patient's
-            subjective experiences and the objective physiology of the patient.
-            Psychiatry treats mental disorders, which are conventionally
-            divided into three very general categories: mental illnesses, severe
-            learning disabilities, and personality disorders. While the
-            focus of psychiatry has changed little over time, the diagnostic and
+            humans. It has been described as an intermediary between the world
+            from a social context and the world from the perspective of those
+            who are mentally ill. People who specialize in psychiatry often
+            differ from most other mental health professionals and physicians in
+            that they must be familiar with both the social and biological
+            sciences. The discipline studies the operations of different organs
+            and body systems as classified by the patient's subjective
+            experiences and the objective physiology of the patient. Psychiatry
+            treats mental disorders, which are conventionally divided into three
+            very general categories: mental illnesses, severe learning
+            disabilities, and personality disorders. While the focus of
+            psychiatry has changed little over time, the diagnostic and
             treatment processes have evolved dramatically and continue to do so.
             Since the late 20th century, the field of psychiatry has continued
             to become more biological and less conceptually isolated from other

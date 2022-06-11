@@ -39,10 +39,12 @@ const userSchema = new Schema({
       type: String,
     },
   },
-  address: String,
+  clinicAddress: String,
   isAdmin: {
     type: Boolean,
     default: false,
-  }
+  },
 });
+
+
 module.exports = mongoose.model("user", userSchema);

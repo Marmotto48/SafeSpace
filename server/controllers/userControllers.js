@@ -1,13 +1,22 @@
-const User = require("../models/userSchema");
+// const User = require("../models/userSchema");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { validationResult } = require("express-validator");
 const cloudinary = require("../config/cloudinaryConfig");
-
+const User = require("../models/userSchema");
+const { registerValidation, loginValidation } = require("../middleware/Joi");
 module.exports = {
   //register new user
   register: async (req, res) => {
     try {
+      const errors = [];
+      //Validation
+      const { error } = registerValidation(req.body);
+      if (error) {
+        const { details } = error;
+        details.forEach((item) => errors.push(item.message));
+        return res.json({ status: 406, msg: errors });
+      }
+
       const {
         role,
         fullname,
@@ -26,7 +35,12 @@ module.exports = {
       if (searchEmail) {
         return res.status(400).send({ msg: "Email already exists." });
       }
-
+      const roleVald = await User.findOne({ role });
+      if (!roleVald) {
+        return res
+          .status(400)
+          .send({ msg: "Are you a regular user or a Doctor?" });
+      }
       //hash password
       const salt = 10;
       const genSalt = bcrypt.genSaltSync(salt);
@@ -57,21 +71,31 @@ module.exports = {
         },
         process.env.SecretKey
       );
-      res.json({ user: newUser, token });
+      res.status(201).json({ user: newUser, token });
     } catch (error) {
       console.log(error);
-      res.status(500).send({ msg: "Cannot save new user", error });
-      console.log(error);
+      res.status(500).send({
+        msg: "Cannot save new user please check your information again.",
+        error,
+      });
     }
   },
 
   //login user
   login: async (req, res) => {
     try {
+      // const errors = [];
+      // //Validation
+      // const { error } = loginValidation(req.body);
+      // if (error) {
+      //   const { details } = error;
+      //   details.forEach((item) => errors.push(item.message));
+      //   return res.json({ status: 406, msg: errors });
+      // }
+
       const { email, password } = req.body;
       //   find if the user exist
       const searchedUser = await User.findOne({ email });
-
       //if the email does not exist
       if (!searchedUser) {
         return res.status(400).send({
@@ -82,23 +106,21 @@ module.exports = {
       // password are equals
       const match = await bcrypt.compare(password, searchedUser.password);
       if (!match) {
-        return res.status(400).send({
-          msg: "Your email or password is wrong, please try again.",
-        });
+        return res.status(400).send({ msg: "Incorrect email or password." });
       }
+
       // generate token
       const token = jwt.sign(
         { id: searchedUser._id, fullname: searchedUser.fullname },
         process.env.SecretKey
       );
-      res.status(200).send({
+      res.status(201).json({
         user: searchedUser,
         msg: "Success",
         token,
       });
     } catch (error) {
-      res.status(500).send({ msg: "Can not get user." });
-      console.log(error);
+      res.status(500).send({ msg: "Can not login user.", error });
     }
   },
   // get one user by id
@@ -113,8 +135,16 @@ module.exports = {
   //Update profile by id
   updateProfile: async (req, res) => {
     try {
-      const { fullname, email, gender, clinic, phone, dateOfBirth, bio } =
-        req.body;
+      const {
+        fullname,
+        email,
+        gender,
+        clinic,
+        phone,
+        dateOfBirth,
+        bio,
+        clinicAddress,
+      } = req.body;
       const user = await User.findByIdAndUpdate(
         req.params.id,
         {
@@ -125,6 +155,7 @@ module.exports = {
           phone,
           dateOfBirth,
           bio,
+          clinicAddress,
         },
         { new: true }
       );
@@ -162,19 +193,22 @@ module.exports = {
   //get users
   getUsers: async (req, res) => {
     try {
-      const users = await User.find().select("-password");
+      const users = await User.find({
+        $and: [{ role: { $ne: "Admin" } }, { id: { $ne: req.userID } }],
+      }).select("-password");
       res.json(users);
     } catch (error) {
-      console.log(error);
       res.status(500).send({ msg: "can not get users", error });
     }
   },
+
   getDoc: async (req, res) => {
     try {
       const doc = await User.find({ role: "Doctor" }).select("-password");
       res.json(doc);
     } catch (error) {
-      res.status(500).json({ msg: "Can not get user.", error });
+      console.log(error);
+      res.status(500).json({ msg: "Can not get doctor user.", error });
     }
   },
   //ipdate avatar
@@ -190,6 +224,27 @@ module.exports = {
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: error });
+    }
+  },
+  //get users
+  searchUser: async (req, res) => {
+    try {
+      const keyword = req.query.search
+        ? {
+            $or: [
+              { fullname: { $regex: req.query.search, $options: "i" } },
+              { email: { $regex: req.query.search, $options: "i" } },
+            ],
+          }
+        : {};
+
+      const users = await User.find(keyword).find({
+        $and: [{ role: { $ne: "Admin" } }, { _id: { $ne: req.userID } }],
+      });
+      res.json(users);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ msg: "Can not get user.", error });
     }
   },
 };

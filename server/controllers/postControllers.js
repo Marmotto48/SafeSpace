@@ -165,12 +165,11 @@ module.exports = {
   },
   getCUPosts: async (req, res) => {
     try {
-      const posts = await Post.find({ author: req.userID }).sort({
-        createdAt: 1,
-      }).populate(
-        "author",
-        "-password"
-      );
+      const posts = await Post.find({ author: req.userID })
+        .sort({
+          createdAt: 1,
+        })
+        .populate("author", "-password");
       res.json(posts);
     } catch (error) {
       console.log(error);
@@ -179,12 +178,24 @@ module.exports = {
   },
   getCUComments: async (req, res) => {
     try {
-      const posts = await Post.find({ commentOwner: req.userID }).sort({
-        createdAt: 1,
-      }).populate(
-        "author", 
-        "-password"
-      );
+      const posts = await Post.find({ comments: { commentOwner: req.userID } })
+        .sort({
+          createdAt: 1,
+        })
+        .populate("author", "-password");
+      res.json(posts);
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ msg: "can not get posts", error });
+    }
+  },
+  getCULikes: async (req, res) => {
+    try {
+      const posts = await Post.find({ comments: { commentOwner: req.userID } })
+        .sort({
+          createdAt: 1,
+        })
+        .populate("author", "-password");
       res.json(posts);
     } catch (error) {
       console.log(error);

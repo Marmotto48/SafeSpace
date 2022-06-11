@@ -16,8 +16,6 @@ const {
   getCUComments,
 } = require("../controllers/postControllers");
 
-
-
 //Route add new post
 router.post("/newpost", postAuth, newPost);
 //get posts
@@ -29,18 +27,17 @@ router.put("/likes/:id", postAuth, likes);
 //get a single post
 router.get("/post/:id", getPost);
 //add comment
-router.put("/post/comment/:id", postAuth, addComment)
+router.put("/post/comment/:id", postAuth, addComment);
 //get private posts
-router.get("/private", getPrivatePosts)
-router.get("/public", getPublicPosts)
-//get current user osts
-router.get("/currentuserpost", postAuth, getCUPosts)
+router.get("/private", getPrivatePosts);
+router.get("/public", getPublicPosts);
+//get current user حosts
+router.get("/currentuserpost", postAuth, getCUPosts);
 
 //delete post
 router.delete("/deletePost/:id", deletePost);
 //delete comment
-router.put("/post/comment/delete/:id", deleteComment)
-router.put("/post/currentusercomments/", postAuth, getCUComments)
-
+router.put("/post/comment/delete/:id", deleteComment);
+router.get("/post/currentusercomments/", postAuth, getCUComments);
 
 module.exports = router;

@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { logout, getUser } from "../../redux/userSlice";
+import { BsFillChatDotsFill } from "react-icons/bs";
+
 
 export const NavbarUser = () => {
+  const [loadClient, setLoadClient] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
   const user = useSelector((state) => state.user);
@@ -36,7 +39,7 @@ export const NavbarUser = () => {
                       </Link>
                     </button>
                     <div className="dropdown-content">
-                      <Link to={{ pathname: "/blog/newPost" }}> Add Post </Link>
+                      <Link to={{ pathname: "/blog/newpost" }}> Add Post </Link>
                       <Link to={{ pathname: "/blog/public" }}>
                         Public Posts
                       </Link>{" "}
@@ -45,6 +48,18 @@ export const NavbarUser = () => {
                       </Link>
                     </div>
                   </div>
+                  <Link
+                    onClick={() => setLoadClient((prevState) => !prevState)}
+                    to={{ pathname: "/chatroom" }}
+                  >
+                    <BsFillChatDotsFill
+                      style={{
+                        fontSize: "25px",
+                        color: "white",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </Link>
                   <div className="dropdown">
                     <button className="dropbtn">
                       <img src={user.user.avatar.imageURL} alt="" />
@@ -77,12 +92,17 @@ export const NavbarUser = () => {
                       </Link>
                     </button>
                     <div className="dropdown-content">
-                      <Link to={{ pathname: "/blog/newPost" }}> Add Post </Link>
+                      <Link to={{ pathname: "/blog/newpost" }}> Add Post </Link>
                       <Link to={{ pathname: "/blog/public" }}>
                         Public Posts
                       </Link>{" "}
                     </div>
                   </div>
+
+                  <BsFillChatDotsFill
+                    style={{ fontSize: "20px", color: "black" }}
+                  />
+
                   <div className="dropdown">
                     <button className="dropbtn">
                       <img src={user.user.avatar.imageURL} alt="" />
@@ -116,7 +136,7 @@ export const NavbarUser = () => {
                         </Link>
                       </button>
                       <div className="dropdown-content">
-                        <Link to={{ pathname: "/blog/newPost" }}>
+                        <Link to={{ pathname: "/blog/newpost" }}>
                           {" "}
                           Add Post{" "}
                         </Link>
@@ -133,10 +153,7 @@ export const NavbarUser = () => {
                         <img src={user.user.avatar.imageURL} alt="" />
                       </button>
                       <div className="dropdown-content">
-                        <Link
-                          to={`/admindashboard`}
-                          className="desktop-link"
-                        >
+                        <Link to={`/admindashboard`} className="desktop-link">
                           Dashboard
                         </Link>
                         <Link

@@ -7,7 +7,8 @@ import { RiMentalHealthLine } from "react-icons/ri";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { GiDoctorFace } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
-import { getPosts } from "../../../redux/postSlice";
+import { getPublicPosts } from "../../../redux/postSlice";
+import { Helmet } from "react-helmet-async";
 
 const Homepage = () => {
   const linkStyle = {
@@ -18,7 +19,7 @@ const Homepage = () => {
 
   //get all posts
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getPublicPosts());
   }, [dispatch]);
   return (
     <div className="hp">
@@ -54,8 +55,8 @@ const Homepage = () => {
           <h1>Welcome to Your Safe Space</h1>
           <p className="text-grey mb-4">
             Psychiatry is the medical specialty devoted to the diagnosis,
-            prevention, and treatment of mental disorders. These include
-            various maladaptations related to mood, behaviour, cognition, and
+            prevention, and treatment of mental disorders. These include various
+            maladaptations related to mood, behaviour, cognition, and
             perceptions. See glossary of psychiatry. Initial psychiatric
             assessment of a person typically begins with a case history and
             mental status examination. Physical examinations and psychological
@@ -69,7 +70,12 @@ const Homepage = () => {
             Learn More
           </Link>
         </div>
-        <img src={img1} alt="" className="img1-hp" />
+        <img
+          src={img1}
+          alt="psychiatry mental illness stress"
+          className="img1-hp"
+          title="homepage vector design picture"
+        />
       </div>
       <div className="our-docs">
         <h1>Our Doctors</h1>
@@ -86,7 +92,7 @@ const Homepage = () => {
               const postNewDate = new Date(post.createdAt).toLocaleDateString();
               const postTime = new Date(post.createdAt).toLocaleTimeString();
               return (
-                <div key={post._id} >
+                <div key={post._id}>
                   {post.private_2 === "Public" && (
                     <div className="posts-hp-card" key={post._id}>
                       <div className="posts-hp-card-header">

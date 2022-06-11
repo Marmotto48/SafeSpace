@@ -6,13 +6,12 @@ export const addpost = createAsyncThunk(
   "post/addpost",
   async (info, { rejectWithValue, dispatch }) => {
     try {
-      const result = await axios.post(
-        "/blog/newpost",
-        // "http://localhost:5000/blog/newpost",
-        info.postInfo,
-        { headers: { token: localStorage.getItem("token") } }
-      );
-      dispatch(getPosts());
+      const result = await axios.post("/blog/newpost", info.postInfo, {
+        headers: { token: localStorage.getItem("token") },
+      });
+      // console.log(result.data);
+      // dispatch(getPosts());
+      // dispatch(getPublicPosts());
       return result.data;
     } catch (error) {
       return rejectWithValue(error.response.data.msg)
@@ -27,7 +26,6 @@ export const getPosts = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const res = await axios.get("/blog/");
-      // const res = await axios.get("http://localhost:5000/blog/");
       return res.data;
     } catch (error) {
       return rejectWithValue(error.response.data.message);
@@ -156,16 +154,10 @@ export const deletePost = createAsyncThunk(
   "posts/deletePost",
   async (info, { rejectWithValue, dispatch }) => {
     try {
-      const res = await axios.delete(
-        `/blog/deletePost/${info.id}`,
-        // `http://localhost:5000/blog/deletePost/${info.id}`,
-        info.data,
-        {
-          headers: { token: localStorage.getItem("token") },
-        }
-      );
+      const res = await axios.delete(`/blog/deletePost/${info.id}`, info.data, {
+        headers: { token: localStorage.getItem("token") },
+      });
       dispatch(getPosts());
-      // history.push("/");
       return res.data;
     } catch (error) {
       return rejectWithValue(error.response.data.msg);
@@ -189,6 +181,7 @@ const postSlice = createSlice({
     [addpost.fulfilled]: (state, action) => {
       state.loading = false;
       state.postErrors = null;
+      state.post = action.payload;
     },
     [addpost.rejected]: (state, action) => {
       state.loading = false;

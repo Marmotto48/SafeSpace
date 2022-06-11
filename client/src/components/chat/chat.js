@@ -1,188 +1,73 @@
-import React, {useState} from "react";
-// import io from "socket.io-client";
+import React, { useState, useEffect } from "react";
+import "./chatroom.css";
+import { useDispatch, useSelector } from "react-redux";
+import { getDocs } from "../../redux/userSlice";
+import { MdSend } from "react-icons/md";
+import { getTwoChats } from "../../redux/chatSlice";
+import { Link } from "react-router-dom";
 import "./chat.css";
-const Chat = ({ match, location }) => {
-  // const chatRommdId = match.params.id;
+const Chat = ({ match }) => {
+  //eslint-disable-next-line
   const [show, setShow] = useState(false);
-
+  //eslint-disable-next-line
+  const chatroomId = match.params.id;
   // const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const user = useSelector((state) => state.user);
+  const convo = useSelector((state) => state.convo);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDocs());
+    dispatch(getTwoChats());
+  }, [dispatch]);
 
   return (
-    <div className="chat">
-      <h3>CHAT TEST 1</h3>
-      {/* <section className="msger">
-        <header className="msger-header">
-          <div className="msger-header-title">
-            <i className="fas fa-comment-alt"></i> SimpleChat
-          </div>
-          <div className="msger-header-options">
-            <span>
-              <i className="fas fa-cog"></i>
-            </span>
-          </div>
-        </header>
-
-        <main className="msger-chat">
-          <div className="msg left-msg">
-            <div
-              className="msg-img"
-              style={{backgroundImage: "url(https://image.flaticon.com/icons/svg/327/327779.svg)"}}
-            ></div>
-
-            <div className="msg-bubble">
-              <div className="msg-info">
-                <div className="msg-info-name">BOT</div>
-                <div className="msg-info-time">12:45</div>
+    <div className="chat_2">
+      <body>
+        <div class="container">
+          <div class="row">
+            <section class="chat">
+              <div class="messages-chat">
+                <div class="message text-only">
+                  <div class="response">
+                    <p class="text"> When can we meet ?</p>
+                  </div>
+                </div>
+                <p class="response-time time"> 15h04</p>
+                <div class="message">
+                  <div
+                    class="photo"
+                    style={{
+                      backgroundImage:
+                        "url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)",
+                    }}
+                  >
+                    <div class="online"></div>
+                  </div>
+                  <p class="text"> 9 pm at the bar if possible 😳</p>
+                </div>
+                <p class="time"> 15h09</p>
               </div>
-
-              <div className="msg-text">
-                Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+              <div class="footer-chat">
+                <i
+                  class="icon fa fa-smile-o clickable"
+                  style={{ fontSize: "25pt" }}
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="text"
+                  class="write-message"
+                  placeholder="Type your message here"
+                ></input>
+                <i
+                  class="icon send fa fa-paper-plane-o clickable"
+                  aria-hidden="true"
+                ></i>
               </div>
-            </div>
-          </div>
-
-          <div className="msg right-msg">
-            <div
-              className="msg-img"
-              style={{backgroundImage: "url(https://image.flaticon.com/icons/svg/145/145867.svg)"}}
-            ></div>
-
-            <div className="msg-bubble">
-              <div className="msg-info">
-                <div className="msg-info-name">Sajad</div>
-                <div className="msg-info-time">12:46</div>
-              </div>
-
-              <div className="msg-text">
-                You can change your name in JS section!
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <form className="msger-inputarea">
-          <input
-            type="text"
-            className="msger-input"
-            placeholder="Enter your message..."
-          />
-          <button type="submit" className="msger-send-btn">
-            Send
-          </button>
-        </form>
-      </section> */}
-      <div class="fabs">
-        <div class="chat">
-          <div class="chat_header">
-            <span id="chat_head">Live Chat</span>
-            <div class="chat_loader"></div>
-            <div class="chat_option">
-              <i class="zmdi zmdi-more-vert"></i>
-              <ul>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #2196F3" }}
-                    color="blue"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #00bcd4" }}
-                    color="cyan"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #607d8b" }}
-                    color="blue-grey"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #4caf50" }}
-                    color="green"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #8bc34a" }}
-                    color="light-green"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #cddc39" }}
-                    color="lime"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #ffc107" }}
-                    color="amber"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #ff5722" }}
-                    color="deep-orange"
-                  ></span>
-                </li>
-                <li>
-                  <span
-                    class="chat_color"
-                    style={{ border: "solid 5px #f44336" }}
-                    color="red"
-                  ></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="chat_converse" class="chat_converse">
-            <span class="chat_msg_item chat_msg_item_admin">
-              <div class="chat_avatar">
-                <i class="zmdi zmdi-headset-mic"></i>
-              </div>
-              Hi! How may I be of service
-            </span>
-            <span class="chat_msg_item chat_msg_item_user">
-              <div class="chat_avatar">
-                <i class="zmdi zmdi-account"></i>
-              </div>
-              Ermm..
-            </span>
-          </div>
-          <div class="fab_field">
-            <a id="fab_listen" class="fab" href="/">
-              <i class="zmdi zmdi-mic-outline"></i>
-            </a>
-            <a id="fab_send" class="fab" href="/">
-              <i class="zmdi zmdi-mail-send"></i>
-            </a>
-            <textarea
-              id="chatSend"
-              name="chat_message"
-              placeholder="Write a message"
-              class="chat_field chat_message"
-            ></textarea>
+            </section>
           </div>
         </div>
-        <a target="_blank" id="fab_help" class="fab" onClick={handleShow} href="/" >
-          <i class="zmdi zmdi-help-outline"></i>
-        </a>
-        <button id="prime" class="fab">
-          <i class="prime zmdi zmdi-plus"></i>
-        </button>
-      </div>
+      </body>
     </div>
   );
 };

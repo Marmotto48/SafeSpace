@@ -1,0 +1,24 @@
+const validateUser = (data, userSchema) => {
+  const res = userSchema.validate(data);
+  console.log("validation result : ", res);
+  if (res.error) {
+    const errorDetails = res.error.details.map((value) => {
+      return {
+        error: value.message,
+        path: value.path,
+      };
+    });
+    return errorDetails;
+  }
+  return null;
+};
+module.exports.validation = (userSchema) => {
+  return (req, res, next) => {
+    const error = validateUser(req.body, userSchema );
+    if (error) { 
+      response.body = error
+      response.message = "WRONG !"
+    }
+    next();
+  }
+}

@@ -9,6 +9,7 @@ const {
   updateProfile,
   deleteUser,
   updateAvatar,
+  searchUser,
 } = require("../controllers/userControllers");
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
 const multer = require("multer");
@@ -24,26 +25,24 @@ const storage = new CloudinaryStorage({
 
 const upload = multer({ storage });
 
-const {
-  validation,
-  registerValidate,
-  loginValidate,
-} = require("../middleware/validator");
+
 
 //get Users
 router.get("/", getUsers);
 //get Doctors
 router.get("/doctors/", getDoc);
 //get User
-router.get("/:id", getUser);
+router.get("/getuser/:id", getUser);
 //Register User
-router.post("/register", registerValidate(), validation, register);
+router.post("/register",  register);
 //Login User
-router.post("/login", validation, loginValidate(), login);
-router.put("/update/:id", updateProfile);
+router.post("/login", login);
+//update profile info
+router.put("/update/:id", postAuth, updateProfile);
 //delete user
 router.delete("/deleteuser/:id", deleteUser);
 //update avatar
 router.put("/uploadimg/:id", upload.single("userImg"), postAuth, updateAvatar);
-
+//get all users and search
+router.get("/search", postAuth, searchUser);
 module.exports = router;

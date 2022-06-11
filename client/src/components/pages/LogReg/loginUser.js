@@ -5,6 +5,7 @@ import VectPat from "./vector-log-pat.png";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { login, register, clearErrors } from "../../../redux/userSlice";
+import Alert from "@mui/material/Alert";
 
 const LoginUser = () => {
   const dispatch = useDispatch();
@@ -41,6 +42,13 @@ const LoginUser = () => {
       <div className="pat-log-container">
         <div className="vector-pat-log">
           <img id="vector-pat-log-img" src={VectPat} alt="" />
+
+          {user && user.registerErrors && (
+            <Alert severity="error">{user.registerErrors}</Alert>
+          )}
+          {user && user.loginErrors && (
+            <Alert severity="error">{user.loginErrors}</Alert>
+          )}
         </div>
         <div className="pat-log-form">
           <div className="login-wrap">
@@ -179,7 +187,6 @@ const LoginUser = () => {
                     </label>
                   </div>
                 </div>
-                {/* {user && user.loginErrors && alert (user.loginErrors) } */}
               </div>
             </div>
           </div>

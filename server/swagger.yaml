@@ -1,0 +1,202 @@
+openapi: 3.0.0
+info:
+  title: MEN REST API
+  description: MongoDB ExpressJS NodeJS REST API
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000/
+    description: Localhost development server 
+  - url: https://smsj-men-restapi.herokuapp.com/api/
+    description: Heroku remote server
+components:
+  securitySchemes:
+    ApiKeyAuth:        # arbitrary name for the security scheme
+      type: apiKey
+      in: header       # can be "header", "query" or "cookie"
+      name: auth-token
+
+  schemas:
+    User:
+      type: object
+      properties:
+        fullname:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+          enum:
+            - Doctor
+            - Patient
+            - isAdmin
+        gender:
+          type: string
+          enum: 
+            - Male
+            - Female
+        password: 
+          type: string
+        dateOfBirth:
+          type: string
+        bio:
+          type: string
+        clinic:
+          type: string
+        phone:
+          type: string
+        avatar:
+          type: object
+            properties:
+              mageURL:
+                type: String
+              public_id: 
+                type: String
+        address:
+          type: string
+        isAdmin:
+          type: boolean
+            nullable: false        
+
+paths:
+
+  /user/register:
+    post:
+      summary: Register a new User
+      description: Register a new User in the database
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+
+      responses:
+        201:
+          description: User created succesfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  _id:
+                    type: string
+
+  /user/login:
+    post:
+      summary: Login a User
+      description: Login a User in order to get JWT token (auth-token)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      
+      responses:
+        200:
+          description: User logged in succesfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  data:
+                    type: string
+
+
+  /user/:
+    get:
+      summary: Retrieves a list of users.
+      description: Retrieves a list of users as JSON objects.
+      responses:
+        200:
+          description: A list of users JSON objects in an array.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+  
+  /user/getuser/{id}:
+    get:
+      summary: Specific user.
+      description: Retrieves a specific user based on it id.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: MongoDB id
+          schema:
+            type: string
+      responses:
+        200:
+          description: A user information in the format of a JSON object.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+   
+    user/update/{id}:
+    put:
+      summary: Updates a specific user.
+      description: Updates a specific user based on it id
+      security:
+        - ApiKeyAuth: []            
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: MongoDB id
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+
+      responses:
+        201:
+          description: User updated succesfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+
+    /user/deleteuser/{id}:
+    delete:
+      summary: Deletes a specific user
+      description: Deletes a specific user based on it id
+      security:
+        - ApiKeyAuth: []            
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: MongoDB id
+          schema:
+            type: string      
+
+      responses:
+        201:
+          description: User deleted succesfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+  
+  
+        

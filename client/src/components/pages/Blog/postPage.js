@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./postPage.css";
-import '../../buttons.css'
+import "../../buttons.css";
 import { Link } from "react-router-dom";
 import { BsStarFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { getPost, postLike, addComment } from "../../../redux/postSlice";
 import EditModal from "./editModal";
-import NotMember from "../../NotMember";
 import Sidebar from "./sidebar";
-
-
+import ModalAlert from "./ModalAlert";
 const PostPage = ({ match }) => {
   const linkStyle = {
     color: "inherit",
@@ -17,11 +15,9 @@ const PostPage = ({ match }) => {
   };
 
   //
-  const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
 
   const dispatch = useDispatch();
-  const { post } = useSelector((state) => state.posts);
+  const { post, loading } = useSelector((state) => state.posts);
   const user = useSelector((state) => state.user);
 
   const [comment, setComment] = useState({});
@@ -43,12 +39,15 @@ const PostPage = ({ match }) => {
     e.preventDefault();
     dispatch(addComment({ postId, desc: comment }));
   };
-// date and time format
+  // date and time format
   const postNewDate = new Date(post.createdAt).toLocaleDateString();
   const postTime = new Date(post.createdAt).toLocaleTimeString();
+  //
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
 
   return (
-    <div className='post-page-0'>
+    <div className="post-page-0">
       {post && post.title && (
         <>
           <div className="post-page">
@@ -62,7 +61,7 @@ const PostPage = ({ match }) => {
                     ? { color: "goldenrod" }
                     : { color: "rgb(33,37,41)" }
                 }
-                onClick={user.isAuth ? () => handleLike(post._id) : handleShow}
+                onClick={user.isAuth ? () => handleLike(post._id) : handleOpen}
                 className="blog-icons star-PP"
               />
               <p style={{ margin: "auto 7px" }}>{post.likes.length}</p>
@@ -79,7 +78,10 @@ const PostPage = ({ match }) => {
                   </Link>
                 </span>
               </div>
-              <div className="post-page-post">{post.description}</div>
+              <div
+                className="post-page-post"
+                dangerouslySetInnerHTML={{ __html: post.description }}
+              ></div>
             </div>
             <div className="post-page-seperator-2">
               <p>{`${postNewDate} ${postTime}`}</p>
@@ -96,7 +98,7 @@ const PostPage = ({ match }) => {
                 className="submit-btn"
                 // onClick={(e) => handleComment(e, post._id)}
                 onClick={
-                  user.isAuth ? (e) => handleComment(e, post._id) : handleShow
+                  user.isAuth ? (e) => handleComment(e, post._id) : handleOpen
                 }
               >
                 Comment
@@ -137,14 +139,14 @@ const PostPage = ({ match }) => {
               );
             })}
           </div>
-          <NotMember show={show} setShow={setShow} />
+          <ModalAlert open={open} setOpen={setOpen} />
           <div className="circle-3"></div>
           <div className="circle-4"></div>
           <div className="circle-5"></div>
           <div className="circle-6"></div>
         </>
       )}
-      <Sidebar/>
+      <Sidebar />
     </div>
   );
 };

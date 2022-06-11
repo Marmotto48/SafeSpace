@@ -6,10 +6,15 @@ export const register = createAsyncThunk(
   "user/register",
   async (info, { rejectWithValue }) => {
     try {
-      // const res = await axios.post( "http://localhost:5000/user/register", info);
-      const res = await axios.post("/user/register", info);
-      return res.data;
+      const result = await axios.post("/user/register", info);
+      if (result.status === 201) {
+        return result.data;
+      } else {
+        console.log(result.data.msg);
+        return rejectWithValue(result.data.msg);
+      }
     } catch (error) {
+      console.log(error.response);
       return rejectWithValue(
         error.response.data.msg
           ? error.response.data.msg
@@ -23,14 +28,16 @@ export const login = createAsyncThunk(
   "user/login",
   async (data, { rejectWithValue }) => {
     try {
-      const result = await axios.post(
-        "/user/login",
-        // "http://localhost:5000/user/login",
-        data
-      );
-      return result.data;
+      const result = await axios.post("/user/login", data);
+      // if (result.status === 201) {
+        return result.data;
+      // } else {
+      //   // console.log(result.data.msg);
+      //   return rejectWithValue(result.data.msg);
+      // }
     } catch (error) {
-      return rejectWithValue(error.response.data.msg);
+      console.log("Error", error.response.data);
+      return rejectWithValue(error.response.data);
     }
   }
 );
@@ -39,7 +46,7 @@ export const getUser = createAsyncThunk(
   "user/getUser",
   async (id, { rejectWithValue }) => {
     try {
-      const result = await axios.get(`/user/${id}`);
+      const result = await axios.get(`/user/getuser/${id}`);
       // const result = await axios.get(`http://localhost:5000/user/${id}`);
       return result.data;
     } catch (error) {
@@ -52,15 +59,11 @@ export const deleteUser = createAsyncThunk(
   "posts/deleteUser",
   async (info, { rejectWithValue, dispatch }) => {
     try {
-      const res = await axios.delete(
-        `/deleteuser/${info.id}`,
-        // `http://localhost:5000/user/deleteuser/${info.id}`,
-        info.data,
-        {
-          headers: { token: localStorage.getItem("token") },
-        }
-      );
-      dispatch(getUsers());
+      const res = await axios.delete(`/user/deleteuser/${info.id}`, info.data, {
+        headers: { token: localStorage.getItem("token") },
+      });
+      dispatch(logout());
+      // dispatch(getUsers())
       // history.push("/");
       return res.data;
     } catch (error) {
@@ -73,10 +76,24 @@ export const getUsers = createAsyncThunk(
   "users/getUsers",
   async (info, { rejectWithValue }) => {
     try {
-      // const result = await axios.get("http://localhost:5000/user/");
       const result = await axios.get("/user/");
       return result.data;
     } catch (error) {
+      return rejectWithValue(error.response.data.msg);
+    }
+  }
+);
+//get all users
+export const searchUsers = createAsyncThunk(
+  "users/searchUsers",
+  async (search, { rejectWithValue }) => {
+    try {
+      const result = await axios.get(`/user/searchuser?search=${search}`, {
+        headers: { token: localStorage.getItem("token") },
+      });
+      return result;
+    } catch (error) {
+      console.log(error);
       return rejectWithValue(error.response.data.msg);
     }
   }
@@ -86,14 +103,10 @@ export const updateUser = createAsyncThunk(
   "users/updateUser",
   async (info, { rejectWithValue, dispatch }) => {
     try {
-      const result = await axios.put(
-        `/update/${info.id}`,
-        // `http://localhost:5000/user/update/${info.id}`,
-        info.data,
-        {
-          headers: { token: localStorage.getItem("token") },
-        }
-      );
+      const result = await axios.put(`/user/update/${info.id}`, info.data, {
+        headers: { token: localStorage.getItem("token") },
+      });
+      console.log(info.id);
       dispatch(getUser(info.id));
       return result.data;
     } catch (error) {
@@ -106,7 +119,6 @@ export const getDocs = createAsyncThunk(
   "users/getDocs",
   async (info, { rejectWithValue }) => {
     try {
-      // const result = await axios.get("http://localhost:5000/user/doctors");
       const result = await axios.get("/user/doctors");
       return result.data;
     } catch (error) {
@@ -121,11 +133,14 @@ export const avatarUpdate = createAsyncThunk(
     try {
       const formData = new FormData();
       formData.append("userImg", info.file);
-      const res = await axios.put(`/user/uploadimg/${info.id}`
-      // const res = await axios.put(`/user/uploadimg/${info.id}`
-      , formData, {
-        headers: { token: localStorage.getItem("token") },
-      });
+      const res = await axios.put(
+        `/user/uploadimg/${info.id}`,
+        // const res = await axios.put(`/user/uploadimg/${info.id}`
+        formData,
+        {
+          headers: { token: localStorage.getItem("token") },
+        }
+      );
       dispatch(getUsers());
       return res.data;
     } catch (error) {
@@ -138,6 +153,7 @@ const userSlice = createSlice({
   initialState: {
     users: [],
     user: {},
+    searchUsers: [],
     userInfo: JSON.parse(localStorage.getItem("user")),
     loading: false,
     registerErrors: null,
@@ -148,7 +164,6 @@ const userSlice = createSlice({
   },
   reducers: {
     logout: (state) => {
-      console.log("logout");
       // localStorage.clear();
       state.isAuth = false;
       state.userInfo = {};
@@ -222,6 +237,19 @@ const userSlice = createSlice({
       state.loading = false;
       state.errors = action.payload;
     },
+    //search users
+    [searchUsers.pending]: (state) => {
+      state.loading = true;
+    },
+    [searchUsers.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.searchUsers = action.payload;
+      state.usersErrors = null;
+    },
+    [searchUsers.rejected]: (state, action) => {
+      state.loading = false;
+      state.errors = action.payload;
+    },
     //get users
     [getDocs.pending]: (state) => {
       state.loading = true;
@@ -239,4 +267,4 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
-export const { logout, clearErrors } = userSlice.actions;
+export const { logout, clearErrors, loginErrors } = userSlice.actions;

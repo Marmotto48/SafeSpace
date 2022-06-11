@@ -4,6 +4,8 @@ import { BsFillChatDotsFill, BsStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { getPublicPosts } from "../../../redux/postSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { CircularIndeterminate } from "../../MUI/Spinner";
+
 import Sidebar from "./sidebar";
 const Blog = () => {
   const linkStyle = {
@@ -13,6 +15,7 @@ const Blog = () => {
 
   const dispatch = useDispatch();
   const post = useSelector((state) => state.posts);
+  const { error, loading } = useSelector((state) => state.posts);
 
   //get all posts
   useEffect(() => {
@@ -32,6 +35,13 @@ const Blog = () => {
           <h3 className="title-css"> Articles</h3>
         </div>
         <div className="blog-content">
+          {error ? (
+            <>Oh no, there was an error</>
+          ) : loading ? (
+            <CircularIndeterminate />
+          ) : (
+            <></>
+          )}
           <div className="blog-posts">
             {post.posts &&
               post.posts.map((post) => {
@@ -61,8 +71,12 @@ const Blog = () => {
                         <Link to={`/blog/post/${post._id}`} style={linkStyle}>
                           <h4>{post.title}</h4>
                         </Link>
-                        <p className="blog-descrip" id="editor">
-                          {post.description}
+                        <p
+                          dangerouslySetInnerHTML={{ __html: post.description }}
+                          className="blog-descrip"
+                          id="editor"
+                        >
+                          {/* {post.description} */}
                         </p>
                         <div className="blog-tags">
                           <button>anxiety</button>
