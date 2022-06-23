@@ -10,11 +10,11 @@ export const register = createAsyncThunk(
       if (result.status === 201) {
         return result.data;
       } else {
-        console.log(result.data.msg);
+        // console.log(result.data.msg);
         return rejectWithValue(result.data.msg);
       }
     } catch (error) {
-      console.log(error.response);
+      // console.log(error.response);
       return rejectWithValue(
         error.response.data.msg
           ? error.response.data.msg
@@ -30,13 +30,8 @@ export const login = createAsyncThunk(
     try {
       const result = await axios.post("/user/login", data);
       // if (result.status === 201) {
-        return result.data;
-      // } else {
-      //   // console.log(result.data.msg);
-      //   return rejectWithValue(result.data.msg);
-      // }
+      return result.data;
     } catch (error) {
-      console.log("Error", error.response.data);
       return rejectWithValue(error.response.data);
     }
   }
@@ -182,7 +177,6 @@ const userSlice = createSlice({
       state.loading = true;
     },
     [register.fulfilled]: (state, action) => {
-      console.log(action.payload);
       state.userInfo = action.payload.user;
       state.token = action.payload.token;
       state.isAuth = true;

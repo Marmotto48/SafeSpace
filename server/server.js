@@ -12,7 +12,7 @@ const yaml = require("yamljs");
 const io = require("socket.io")(server, {
   cors: true,
   origins: ["http://127.0.0.1:5000"],
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST"], 
   credentials: true,
 });
 const jwt = require("jsonwebtoken");

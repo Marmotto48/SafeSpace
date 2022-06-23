@@ -6,16 +6,16 @@
   "scripts": {
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
-    "back": "cd Server && nodemon server ",
+    "back": "cd server && nodemon server ",
     "front": "cd client && npm start",
-    "start": "concurrently \"npm run front\" \"npm run back\""
+    "start": "concurrently  --raw  \"npm run front\" \"npm run back\""
   },
   "author": "Donia BR",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "cloudinary": "^1.27.1",
-    "concurrently": "^6.3.0",
+    "concurrently": "^7.2.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
