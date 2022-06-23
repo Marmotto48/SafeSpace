@@ -47,7 +47,6 @@ const LoginUser = () => {
       <div className="pat-log-container">
         <div className="vector-pat-log">
           <img id="vector-pat-log-img" src={VectPat} alt="" />
-          <Alert severity="error">error</Alert>
           {user && user.registerErrors && (
             <>
               <h1>sqdqsd</h1>
